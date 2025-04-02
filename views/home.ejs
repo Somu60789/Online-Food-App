@@ -1,0 +1,21 @@
+<h1>Welcome to Food Server APP API BASE PROJECT</h1>
+<p>This is the homepage rendered using EJS layouts!</p>
+<!-- Registration Form -->
+<h2>Register</h2>
+<form action="/api/v1/auth/register" method="POST">
+    <input type="text" name="userName" placeholder="Enter Name" required>
+    <input type="email" name="email" placeholder="Enter Email" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <input type="text" name="phone" placeholder="Phone" required>
+    <input type="text" name="address" placeholder="Enter address" required>
+    <input type="text" name="answer" placeholder="Enter Answer" required>
+    <button type="submit">Register</button>
+</form>
+
+<!-- Login Form -->
+<h2>Login</h2>
+<form action="/api/v1/auth/login" method="POST">
+    <input type="email" name="email" placeholder="Enter Email" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <button type="submit">Login</button>
+</form>

@@ -1,0 +1,16 @@
+<h1>Welcome to Food Server APP API BASE PROJECT</h1>
+<p>This is the homepage rendered using EJS layouts!</p>
+<h2>Welcome, <%= user.userName %>!</h2>
+<h3>Restaurants List</h3>
+
+<% if (restaurants.length > 0) { %>
+  <ul>
+    <% restaurants.forEach(restaurant => { %>
+      <li>
+        <strong><%= restaurant.title %></strong> - <%= restaurant.coords.address %>
+      </li>
+    <% }) %>
+  </ul>
+<% } else { %>
+  <p>No restaurants found.</p>
+<% } %>
